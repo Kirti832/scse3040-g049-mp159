@@ -1,0 +1,23 @@
+# Byte-compiled / virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Raw CSV data tracked by DVC (keep .dvc files committed)
+/data/raw/*.csv
+!/data/raw/holdout_features.csv
+
+# MLflow artifact stores (mlflow.db is committed)
+mlruns/
+mlartifacts/
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json

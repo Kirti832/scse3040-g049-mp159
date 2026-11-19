@@ -1,0 +1,37 @@
+data:
+  raw_train_path: data/raw/train.csv
+  raw_later_path: data/raw/later.csv
+  holdout_features_path: data/raw/holdout_features.csv
+  predictions_path: predictions/holdout_predictions.csv
+  findings_path: reports/findings.yaml
+  target_col: pm25_next_day
+  id_col: record_id
+  date_col: date
+  group_col: station_zone
+  feature_cols:
+    - pm25_today
+    - wind_kmph
+    - humidity_pct
+    - temp_c
+    - traffic_index
+    - stubble_fires
+    - day_type
+    - station_zone
+
+mlflow:
+  tracking_uri: sqlite:///mlflow.db
+  experiment_name: mp159-jaipur-air-quality
+  registered_model_name: mp159-pm25-forecaster
+  champion_alias: champion
+  model_artifact_path: models/model.joblib
+
+model:
+  n_estimators: 200
+  max_depth: 10
+  min_samples_split: 4
+  random_state: 42
+
+monitoring:
+  psi_bins: 10
+  retrain_later_split: 0.70
+  promotion_min_mae_improvement: 0.12
