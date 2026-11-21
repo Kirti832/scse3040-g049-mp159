@@ -1,0 +1,9 @@
+{
+  "cleaned_train_rows": 1000,
+  "baseline_val_mae": 14.967194698087239,
+  "baseline_val_rmse": 18.597536992166084,
+  "improved_val_mae": 14.23934647234255,
+  "improved_val_rmse": 18.06186093408669,
+  "mae_improvement": 0.7278482257446885,
+  "mlflow_run_id": "b758dd0c918248b5bf68434b7e6e5cbe"
+}
