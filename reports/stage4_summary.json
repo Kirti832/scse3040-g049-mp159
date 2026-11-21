@@ -1,0 +1,23 @@
+{
+  "most_drifted_feature": "stubble_fires",
+  "psi_by_feature": {
+    "pm25_today": 0.0409029529458844,
+    "wind_kmph": 0.5767224734594831,
+    "humidity_pct": 0.09649067921137441,
+    "temp_c": 0.06394479863647536,
+    "traffic_index": 0.049292285207362715,
+    "stubble_fires": 5.2884039185132865
+  },
+  "worst_served_group": "Central",
+  "mae_by_group": {
+    "Central": 92.30374486391854,
+    "Industrial": 29.940233758901076,
+    "Residential": 26.436622332592222
+  },
+  "mae_v1_on_check": 48.10851850302925,
+  "mae_v2_on_check": 17.655969329177854,
+  "relative_mae_improvement": 0.6329970267517985,
+  "decision": "promote",
+  "champion_version": "2",
+  "predictions_file": "predictions\\holdout_predictions.csv"
+}

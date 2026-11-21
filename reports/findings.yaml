@@ -1,10 +1,5 @@
-﻿# MP159 findings --- fill in every value, keep every key.
-# The marking tool reads this file. Write null only where the comment says so.
-# Use the exact column names and group values from your data files.
-
-group_id: "G049"
-problem_id: "MP159"
-
+group_id: G049
+problem_id: MP159
 data_issues:
   leaking_column:
     present: false
@@ -25,8 +20,8 @@ data_issues:
   stuck_sensor:
     present: true
     column: humidity_pct
-    start_date: "2026-04-25"
-    end_date: "2026-05-10"
+    start_date: '2026-04-25'
+    end_date: '2026-05-10'
   target_typos:
     present: false
     count: null
@@ -34,27 +29,28 @@ data_issues:
     present: true
     column: day_type
     true_levels: 3
-
 tracking:
   experiment_name: mp159-jaipur-air-quality
   best_run_id: e2becc6168fa4d84b1a4df7d43d9fc3b
   registered_model_name: mp159-pm25-forecaster
-  champion_version: "1"
-
+  champion_version: '2'
+  v2_run_id: 0b3bafb2c7dd47fa9e6ca13e92afe295
+  v2_version: '2'
 monitoring:
   psi_by_feature:
-    pm25_today: null
-    wind_kmph: null
-    humidity_pct: null
-    temp_c: null
-    traffic_index: null
-    stubble_fires: null
-  most_drifted_feature: null
+    pm25_today: 0.0409029529458844
+    wind_kmph: 0.5767224734594831
+    humidity_pct: 0.09649067921137441
+    temp_c: 0.06394479863647536
+    traffic_index: 0.049292285207362715
+    stubble_fires: 5.2884039185132865
+  most_drifted_feature: stubble_fires
   mae_by_group:
-    Central: null
-    Residential: null
-    Industrial: null
-  worst_served_group: null
-  mae_v1_on_check: null
-  mae_v2_on_check: null
-  decision: null
+    Central: 92.30374486391854
+    Industrial: 29.940233758901076
+    Residential: 26.436622332592222
+  worst_served_group: Central
+  mae_v1_on_check: 48.10851850302925
+  mae_v2_on_check: 17.655969329177854
+  decision: promote
+  relative_mae_improvement: 0.6329970267517985
