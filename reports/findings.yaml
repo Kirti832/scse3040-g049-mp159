@@ -37,7 +37,7 @@ data_issues:
 
 tracking:
   experiment_name: mp159-jaipur-air-quality
-  best_run_id: b758dd0c918248b5bf68434b7e6e5cbe
+  best_run_id: e2becc6168fa4d84b1a4df7d43d9fc3b
   registered_model_name: mp159-pm25-forecaster
   champion_version: "1"
 

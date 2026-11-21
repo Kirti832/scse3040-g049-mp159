@@ -1,9 +1,17 @@
 {
+  "data_sha256": "78aa931418e836ed27766455361195f0689eab60885353f4e8f7d99528aa32ea",
   "cleaned_train_rows": 1000,
   "baseline_val_mae": 14.967194698087239,
   "baseline_val_rmse": 18.597536992166084,
-  "improved_val_mae": 14.23934647234255,
-  "improved_val_rmse": 18.06186093408669,
-  "mae_improvement": 0.7278482257446885,
-  "mlflow_run_id": "b758dd0c918248b5bf68434b7e6e5cbe"
+  "improved_rf_val_mae": 14.23934647234255,
+  "improved_rf_val_rmse": 18.06186093408669,
+  "improved_gbr_val_mae": 12.39338048334467,
+  "improved_gbr_val_rmse": 15.819315824302564,
+  "best_model": "improved_gbr",
+  "best_val_mae": 12.39338048334467,
+  "best_val_rmse": 15.819315824302564,
+  "mae_improvement": 2.573814214742569,
+  "best_run_id": "e2becc6168fa4d84b1a4df7d43d9fc3b",
+  "registered_model_name": "mp159-pm25-forecaster",
+  "champion_version": "1"
 }
