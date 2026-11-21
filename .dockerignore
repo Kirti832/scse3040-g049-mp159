@@ -1,11 +1,7 @@
-__pycache__/
-*.py[cod]
+﻿__pycache__/
+*.pyc
 .pytest_cache/
 .git/
 .github/
-.dvc/
+.dvc/cache/
 data/raw/*.csv
-mlruns/
-mlartifacts/
-*.log
-.env
